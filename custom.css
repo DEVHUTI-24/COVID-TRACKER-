@@ -1,0 +1,185 @@
+html, body {
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#globalArea {
+
+    height: 100%;
+    width: 100%;
+    cursor: grab;
+
+}
+
+.more_info {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.total_details {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height: 50px;
+}
+
+
+a {
+    color: #ff0000;
+}
+
+.card {
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+.momodal {
+    display: none; /* Hidden by default */
+    position:fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+   height: 100%;
+    width: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.momodal-content {
+
+    margin: 15% auto; /* 15% from the top and centered */
+   
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    border-radius: 20px;   background-color:#3f0d12;
+    background-image :linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);box-shadow: 0px 0px 20px 0px grey;
+}
+
+/* The Close Button */
+.moclose {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.moclose:hover,
+.moclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 1463px) {
+    #mycard {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #mycard {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #mycard {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1463px) {
+    #mycard2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #mycard2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #mycard2 {
+        display: none;
+    }
+}
+
+/*@media screen and (max-width: 2510px) {
+    #moModal {
+      !*  opacity: 0;*!
+        display: none;
+    }
+}*/
+
+
+/*@media screen and (max-width: 1463px) {
+    #moModal {
+        opacity: 1;
+        display: block;
+    }
+}*/
+
+@media screen and (max-width: 2510px) {
+    .total_details {
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 1463px) {
+    .total_details {
+        opacity: 1;
+        display: block;
+    }
+}
+#mycard{z-index: 1;}
+#more{background-color: black;color:white;}
+#more:hover{background-color:gold;cursor: pointer;color: black}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color:white;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidenav .active{background-color:#3f0d12;
+    background-image :linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+

@@ -1,0 +1,50 @@
+var data = [
+  {
+    "e": "AU",
+    "i": "Oceania",
+    "v": 0,
+     "outColor": "#FF6347"
+  },
+  {
+    "e": "US",
+    "i": "North America",
+    "v": 0,
+    "outColor": "#FF6347"
+  },
+  {
+    "e": "PY",
+    "i": "South America",
+    "v": 0,
+    "outColor": "#FF6347"
+  },
+  {
+    "e": "LT",
+    "i": "Europe",
+    "v": 0,
+    "outColor": "#FF6347"
+  },
+  {
+    "e": "CN",
+    "i": "Asia",
+    "v": 0,
+    "outColor": "#FF6347"
+  },
+  {
+    "e": "GA",
+    "i": "Africa",
+    "v": 0,
+    "outColor": "#FF6347"
+  },
+  {
+    "e": "GL",
+    "i": "GL",
+    "v": 0,
+    "outColor": "#FF6347"
+  },
+  {
+    "e": "AQ",
+    "i": "AQ",
+    "v": 0,
+    "outColor": "#FF6347"
+  }
+]

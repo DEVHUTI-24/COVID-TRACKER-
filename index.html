@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="data.json"></script>
+    <meta charset="UTF-8">
+    <title>Covid-19 Cases</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="three.js"></script>
+    <script src="gio.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css" type="text/css">
+</head>
+<body style="overflow: hidden;background-image: url(https://media.giphy.com/media/HKHDZ0y08hERi/giphy.gif)">
+    <div id="mySidenav" style="position: absolute; z-index: 2" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="active mt-5" href="#">Dasboard</a>
+          <a href="india.html">India</a>
+  <a href="measures.html">Precautions</a>
+
+  <a href="about.html">About</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer;color: white;position: absolute;top:2%;left: 2%;z-index: 1" onclick="openNav()">&#9776; </span>
+
+    <div style="z-index:2">
+<h1 class="text-white text-center my-2">COVID-19</h1>
+<h6 class="text-center text-white">Click on a country to see the cases, deaths and recoveries</h6></div>
+<div class="more_info text-center" style="">
+    <button class="btn btn-secondary mx-auto" data-toggle="modal" data-target="#exampleModalLong">More Information
+    </button>
+</div>
+<div class="total_details text-center text-white" style="">
+    <h6>Confirmed Cases <span style="color: gold" class="total_confirmed">1234567</span>
+        Deaths <span style="color: red" class="total_deaths">123456</span><br>
+        Recovered <span style="color: green" class="total_recovered">43735835</span>
+    </h6>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white" style="background-color: black">
+            <div class="modal-header" style="background-color:#3f0d12;
+    background-image :linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);">
+                <h5 class="modal-title" id="exampleModalLongTitle">More Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color: white">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                This website was developed by Aman Jain, student at Jaipur Engineering College and Research Centre.
+                <br><br>
+                The goal of this project is to provide a simple, interactive way to visualize the impact of COVID-19. We
+                wanted people to be able to see this as something that brings us all together. It's not one country, or
+                another country; it's one planet – and this is what our planet looks like today.
+                <br><br>
+                The data is from Worldometer's real-time updates, utilizing reliable sources from around the world. The
+                TODAY cases/deaths are based on GMT (+0). The website pulls new data every 15 minutes, refresh to see any
+                changes.
+                <br><br>
+                If you have questions, suggestions, or feedback, please send us an email!
+                <br><br>
+                
+            </div>
+            <div class="modal-footer" style="background-color:#3f0d12;
+    background-image :linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);">
+                <span class="mr-auto text-white" style="font-size: 20px">Contact at:</span> 
+                <a href="https://www.facebook.com/profile.php?id=100004227786452"><span class="fa fa-facebook mx-1" style="font-size: 20px;color: white"></span></a>
+                <a href="https://www.linkedin.com/in/aman-jain-06334920a"><span class="fa fa-linkedin mx-1" style="font-size: 20px;color: white"></span></a>
+                <a href="https://www.instagram.com/_amanjain11/"><span class="fa fa-instagram mx-1" style="font-size: 20px;color: white"></span></a>
+                <a href="https://mail.google.com/mail/u/1/#inbox"><span class="fa fa-envelope mx-1" style="font-size: 20px;color: white"></span></a>
+             
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card float-left" id="mycard" style="width: 18rem;border-radius: 20px;   background-color:#3f0d12;
+background-image :linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);box-shadow: 0px 0px 20px 0px grey;">
+
+    <div class="card-body text-light">
+        <div class="pt-3"
+             style="position: absolute;top: 0px;left: 0px;width: 18rem;border-top-left-radius:20px;border-top-right-radius: 20px;height: 80px;background-color: black;border-bottom: 2px solid white">
+            <h4 class="current card-title text-light pt-2 pb-3 text-center" style="font-family:sans-serif">Select
+                any country</h4></div>
+        <div style="margin-top: 80px;margin-bottom: 80px">
+            Confirmed Cases
+            <p class="confirmed text-light" style=" text-shadow: 2px 2px 4px #000;">
+            0</p> Deaths
+            <p  class="deaths text-light" style=" text-shadow: 2px 2px 4px #000;">0</p>
+            Recovered
+            <p class="recovered text-light" style=" text-shadow: 2px 2px 4px #000;">0</p>
+        </div>
+<div class="text-center" id="more" style="position: absolute;bottom: 0px;left: 0px;width: 18rem;border-bottom-left-radius:20px;border-bottom-right-radius: 20px;height: 50px;border-top: 2px solid white">
+   <h5 class="my-2">More Details</h5>
+           </div>
+    </div>
+</div>
+<div id="globalArea" class="text-center" style="position: absolute;top: 0">
+</div>
+<div class="card float-right" id="mycard2" style="width: 18rem;border-radius: 20px;   background-color:#3f0d12;
+background-image :linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);box-shadow: 0px 0px 20px 0px grey;position: absolute; top: 12%;left: 75%">
+
+    <div class="card-body text-light">
+        <div class="pt-3"
+             style="position: absolute;top: 0px;left: 0px;width: 18rem;border-top-left-radius:20px;border-top-right-radius: 20px;height: 80px;
+             background-color: black;border-bottom: 2px solid white">
+            <h4 class="card-title text-light pt-2 pb-3 text-center" id="current" style="font-family:sans-serif">Total
+                Cases</h4></div>
+        <div style="margin-top: 80px;margin-bottom: 80px">
+            Total Confirmed Cases
+            <p id="confirmed" class="total_confirmed text-light" style=" text-shadow: 2px 2px 4px #000;">
+                0
+            </p>
+            Total Deaths
+            <p class="total_deaths text-light" style=" text-shadow: 2px 2px 4px #000;">
+                0
+            </p>
+            Total Recovered
+            <p id="recovered" class="total_recovered text-light" style=" text-shadow: 2px 2px 4px #000;">
+            0
+            </p>
+        </div>
+<div class="text-center" id="more" style="position: absolute;bottom: 0px;left: 0px;width: 18rem;border-bottom-left-radius:20px;border-bottom-right-radius: 20px;height: 50px;border-top: 2px solid white">
+   <h5 class="my-2">More Details</h5>
+           </div>
+    </div>
+</div>
+<!-- The Modal -->
+<div id="moModal" class="momodal text-light">
+
+    <!-- Modal content -->
+    <div class="momodal-content">
+        <span class="moclose mx-3 mt-2">&times;</span>
+        <div class="pt-3" style="border-top-left-radius:20px;border-top-right-radius: 20px;height: 80px;
+            background-color: black;width:100%">
+        <h6 class="current text-light pt-2 pb-3 text-center "  style="font-family:sans-serif">Select any country</h6>
+        </div>
+
+        <div ><br>
+            <span class="mx-3">Confirmed Cases</span>
+            <p class="confirmed text-light mx-3" style=" text-shadow: 2px 2px 4px #000;">
+            0</p>
+            <span class="mx-3">
+                Deaths</span>
+            <p  class="deaths text-light mx-3" style=" text-shadow: 2px 2px 4px #000;">0</p>
+            <span class="mx-3">Recovered</span>
+            <p class="recovered text-light mx-3" style=" text-shadow: 2px 2px 4px #000;">0</p>
+        </div>
+    </div>
+
+</div>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="custom.js"></script>
+</body>
+</html>

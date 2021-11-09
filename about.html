@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="data.json"></script>
+    <meta charset="UTF-8">
+    <title>Covid-19 Cases</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="three.js"></script>
+    <script src="gio.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css" type="text/css">
+</head>
+<body style="background-color:black">
+    <div id="mySidenav" style="position: absolute; z-index: 2" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="mt-5" href="index.html">Dasboard</a>
+          <a href="india.html">India</a>
+  <a href="measures.html">Precautions</a>
+    <a class="active" href="about.html">About</a>
+</div>
+<span style="font-size:30px;cursor:pointer;color: white;position: absolute;top:2%;left: 2%;z-index: 1" onclick="openNav()">&#9776; </span>
+    <div style="background-color:#3f0d12;
+    background-image :linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);">
+    <h1 class="text-center text-white py-3">Covid Tracker</h1>
+    </div>
+   <div class="container my-5 " id="main_content">
+    <p style="color: white"> This project tells us about the situtation of covid-19 around the globe. It informs us about the confirmed cases, deaths and recovered cases till date of a particular country as well as of the whole planet. 
+    <br><br>
+    The 3-D globe is made using gio.js and three.js library. Gio.js is a open-source library for web 3D globe data visualization built with three.js. Gio.js also allows us to customize a 3D data visualization model in a declarative way, add your own data, and integrate it into your own modern web application. Therefore, we have made this globe using gio.js API and by customizing it according to our need.
+    <br> <br>
+    The data in the globe is taken from Worldometer's real-time updates, utilizing reliable sources from around the world. The TODAY cases/deaths are based on GMT (+0). The website pulls new data every 15 minutes, refresh to see any changes. It is done by using COVID-19 data API from the Rapid API Marketplace which uses the country code and delivers us the covid data according to it from several reliable sources. The data is updated in every 15 minutes in order to get the latest covid count of the country. 
+    <br> <br>
+    This whole project is made using html, css and JavaScript. Both of the API's are also integrated in this project using JavaScript only. Webpages are made responsive using Bootstrap. And then finally, the project is taken Online by using Apache WebServer so that one can directly access the project by simply using the IP alotted to it. </p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="custom.js"></script>
+    </body>
+</html>
+                
+            
